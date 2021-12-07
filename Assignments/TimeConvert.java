@@ -1,10 +1,8 @@
 import java.util.Scanner;
 
-public class Testing {	
+public class TimeConvert {	
 public static void main (String [] args) {
 
-	// Nesta Fletcher
-	// 10/17/21
 	// Horstmann Chapter 5, Project P5.14
 	// This program uses a basic method which will take our user-input values for minutes and hours, and return the time in English vocabulary
 	// We use an array for all our values, and some simple special case if-else statements, and then call the method in our main using Println
