@@ -3,8 +3,6 @@ public class TicTacToe {
 
 	public static void main(String[] args) {
 		
-		// Nesta Fletcher
-		// 1/1/21
 		// Horstmann Chapter 6, Project P6.25
 		// This is a game of tic-tac-toe which takes advantage of arrays, methods, and some special conditions to make a nice simple game.
 		
