@@ -1,10 +1,7 @@
 import java.util.Scanner;
-
 public class Test {
-
+	static Scanner in = new Scanner(System.in);
 	public static void main(String[] args) {
-		// Horstmann Chapter 9, Project P9.1
-		// A simple quiz using subclasses to make the main method more visually appealing an understanding to alter the program.
 		Question q1 = new Question();
 		q1.setText("Who invented Java?");
 		q1.setAnswer("James Gosling");
@@ -17,15 +14,14 @@ public class Test {
 		q3.setText("Who is the best Java coder ever in the whole world?");
 		q3.setAnswer("Nesta");
 		
-		QuestionAnswer(q1);
-		QuestionAnswer(q2);
-		QuestionAnswer(q3);
+		QuestionPrint(q1);   // Our methods being called clean and concisely taking advantage of subclasses to hide the rest
+		QuestionPrint(q2);
+		QuestionPrint(q3);
 		System.out.println("Great job taking the quiz! No grade needed, an A+ is always rewarded for effort! :)");
 	}
-		public static void QuestionAnswer(Question q) {
+		public static void QuestionPrint(Question q) { // Our method to print all our information
 			q.display();
 			System.out.println("Your answer: ");
-			Scanner in = new Scanner(System.in);
 			String response = in.nextLine();
 			System.out.println(q.checkAnswer(response));
 		}
