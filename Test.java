@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class Test {
 
 	public static void main(String[] args) {
-		// Nesta Fletcher
-		// 12/5/2021
 		// Horstmann Chapter 9, Project P9.1
 		// A simple quiz using subclasses to make the main method more visually appealing an understanding to alter the program.
 		Question q1 = new Question();
