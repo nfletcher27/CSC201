@@ -30,7 +30,5 @@ public class RandomStuff {
 		   public static void displayNumberSquared(int n)
 		   {
 		      System.out.println(n + " squared is " + (n * n)); 
-		   }
-		
-		
+		   }	
 	    }
