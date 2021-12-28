@@ -1,7 +1,7 @@
 public class Dog {
 
-	private String name;
-	private int age;
+	protected String name;
+	protected int age;
 	
 	public Dog(String name, int age) {
 		this.name = name;
