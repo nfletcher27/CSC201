@@ -18,3 +18,15 @@ public String missingChar(String str, int n) {
   return str.substring(0, n) + str.substring(n+1);
 }
 
+// startHi
+public boolean startHi(String str) {
+  if(str.length() >= 2) {
+    if(str.substring(0, 2).equals("hi")) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
