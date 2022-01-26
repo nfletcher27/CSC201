@@ -54,3 +54,46 @@ public boolean has23(int[] nums) {
     return false;
   }
 }
+
+// sameFirstLast
+public boolean sameFirstLast(int[] nums) {
+  if(nums.length > 0) {
+    if(nums[0] == nums[nums.length-1]) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
+
+// sum3
+public int sum3(int[] nums) {
+  return nums[0] + nums[1] + nums[2];
+}
+
+// maxEnd3
+public int[] maxEnd3(int[] nums) {
+  if(nums[0] > nums[2]) {
+    nums[1] = nums[0];
+    nums[2] = nums[0];
+    return nums;
+  } else {
+    nums[1] = nums[2];
+    nums[0] = nums[2];
+    return nums;
+  }
+}
+
+// biggerTwo
+public int[] biggerTwo(int[] a, int[] b) {
+  if(a[0] + a[1] > b[0] + b[1]) {
+    return a;
+  } else if(a[0] + a[1] < b[0] + b[1]) {
+    return b;
+  } else {
+    return a;
+  }
+}
+
