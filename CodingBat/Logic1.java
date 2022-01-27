@@ -100,4 +100,33 @@ public boolean isGood(int n) {
   }
 }
 
-//
+// answerCell
+public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
+  if(isAsleep) {
+    return false;
+  } else if(isMom && isMorning) {
+    return true;
+  } else if(isMorning) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+// inOrder
+public boolean inOrder(int a, int b, int c, boolean bOk) {
+  if(!bOk) {
+    if(b > a && c > b) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    if(c > b) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
