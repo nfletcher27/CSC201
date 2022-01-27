@@ -83,3 +83,21 @@ public boolean love6(int a, int b) {
     return false;
   }
 }
+
+// sortaSum
+public int sortaSum(int a, int b) {
+  if(isGood(a+b)){
+    return a+b;
+  } else {
+    return 20;
+  }
+}
+public boolean isGood(int n) {
+  if(n > 9 && n < 20) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+//
