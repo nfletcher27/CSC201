@@ -34,3 +34,18 @@ public String comboString(String a, String b) {
   return small + big + small;
 }
 
+// withoutX
+public String withoutX(String str) {
+   
+   if(str.length() < 2) {
+	     return str.replace("x", "");
+	   } else if(str.charAt(0) == 'x' && str.charAt(str.length()-1) == 'x') {
+	     return str.substring(1, str.length()-1);
+	   } else if(Character.toString(str.charAt(0)).equals("x")) {
+	     return str.substring(1, str.length());
+	   } else if(Character.toString(str.charAt(str.length()-1)).equals("x")) {
+	     return str.substring(0, str.length()-1);
+	   } else {
+	     return str;
+	   }
+}
