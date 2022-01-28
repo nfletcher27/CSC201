@@ -54,3 +54,25 @@ public String stringTimes(String str, int n) {
    return str;
  }
 }
+
+// frontBack
+public String frontBack(String str) {
+  
+  if(str.length() < 2) {
+    return str;
+  } else {
+  char start = str.charAt(0);
+  char end = str.charAt(str.length()-1);
+  return Character.toString(end) + str.substring(1, str.length()-1) + 
+  Character.toString(start);
+  }
+}
+
+// or35
+public boolean or35(int n) {
+  if(n % 3 == 0 || n % 5 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
