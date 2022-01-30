@@ -52,4 +52,13 @@ public String endUp(String str) {
   }
 }
 
-//
+// warmup1
+public int close10(int a, int b) {
+  if(a == b || Math.abs(a-10) == Math.abs(b-10)) {
+    return 0;
+  } else if(Math.abs(a-10) > Math.abs(b-10)) {
+    return b;
+  } else {
+    return a;
+  }
+}
