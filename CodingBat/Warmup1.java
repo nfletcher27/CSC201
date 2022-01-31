@@ -89,3 +89,14 @@ public boolean stringE(String str) {
     return false;
   }
 }
+
+// front22
+public String front22(String str) {
+  if(str.length() < 1) {
+    return str;
+  } else if(str.length() < 2) {
+    return str.substring(0, 1) + str + str.substring(0, 1);
+  } else {
+    return str.substring(0, 2) + str + str.substring(0, 2);
+  }
+}
