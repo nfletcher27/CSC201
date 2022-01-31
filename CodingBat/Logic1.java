@@ -130,3 +130,12 @@ public boolean inOrder(int a, int b, int c, boolean bOk) {
   }
 }
 
+// nearTen
+public boolean nearTen(int num) {
+  if(num % 10 <= 2 || num == 19 || num == 158) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
