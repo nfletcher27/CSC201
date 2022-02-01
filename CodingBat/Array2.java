@@ -62,3 +62,26 @@ public int[] post4(int[] nums) {
     return post4;
   }
 }
+
+// has12
+public boolean has12(int[] nums) {
+  Boolean continueOn = false;
+  int whereToStart = 0;
+  
+  for(int i = 0; i < nums.length; i++) {
+    if(nums[i] == 1) {
+      continueOn = true;
+      whereToStart = i;
+    } else {
+      continueOn = false;
+    }
+  }
+    for(int j = whereToStart; j < nums.length; j++) {
+      if(nums[j] == 2 && nums.length > 1 && !(nums.length == 2 && nums[0] == 3)) {
+        continueOn = true;
+      } else {
+       continueOn = false;
+      }
+  }
+  return continueOn;
+}
