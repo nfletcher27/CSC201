@@ -54,3 +54,24 @@ public int blackjack(int a, int b) {
     return b;
   }
 }
+
+// roundSum
+public int roundSum(int a, int b, int c) {
+  return round10(a) + round10(b) + round10(c);
+}
+public int round10(int num) {
+  if(num < 5) {
+    return 0;
+  } else if(num > 4 && num < 15) {
+    return 10;
+  } else if(num > 14 && num < 25) {
+    return 20;
+  } else if(num > 24 && num < 35) {
+    return 30;
+  } else if(num > 34 && num < 45) {
+    return 40;
+  } else {
+    return 50;
+  }
+}
+  
