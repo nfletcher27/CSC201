@@ -23,3 +23,20 @@ public boolean bobThere(String str) {
   }
   return false;
 }
+
+// reactSeperator
+     public String repeatSeparator(String word, String sep, int count) {
+  if(count == 0) {
+    return "";
+  } else if(count == 1) {
+    return word;
+  } else {
+    int counter = 0;
+    String finalS = word;
+    while(counter < count-1) {
+      finalS += sep + word;
+      counter++;
+    }
+    return finalS;
+  }
+}
