@@ -88,3 +88,28 @@ public boolean makeBricks(int small, int big, int goal) {
   
 }
 
+// makesChocolate
+public int makeChocolate(int small, int big, int goal) {
+  Boolean doAble = false;
+  if(goal > big*5 + small) {
+    doAble = false;
+  } else if(goal % 5 > small) {
+    doAble = false;
+  } else {
+    doAble = true;
+  }
+  
+  if(doAble) {
+     if(goal < 5) {
+       return small;
+     } else if(goal < 10) {
+       return goal - 5;
+     } else {
+       int howMany = goal;
+       howMany = howMany - (big*5);
+       return howMany;
+     }
+  } else {
+    return -1;
+  }
+}
