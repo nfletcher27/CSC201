@@ -41,3 +41,17 @@ public String withoutX2(String str) {
     return str.replace("x", "");
   }
 }
+
+// doubleChar
+public String doubleChar(String str) {
+  
+  int total = str.length();
+  char chr;
+  StringBuilder finalS = new StringBuilder(total*2);
+  for(int i = 0; i < total; i++) {
+    chr = str.charAt(i);
+    finalS.append(chr);
+    finalS.append(chr);
+  }
+  return finalS.toString();
+}
