@@ -33,10 +33,23 @@ public boolean bobThere(String str) {
   } else {
     int counter = 0;
     String finalS = word;
+    
     while(counter < count-1) {
       finalS += sep + word;
       counter++;
     }
     return finalS;
   }
+}
+
+// xyzThere
+public boolean xyzThere(String str) {
+  
+  str = " " + str;
+  for(int i = 1; i < str.length()-2; i++) {
+    if(str.substring(i, i+3).equals("xyz") &&
+    !str.substring(i-1, i).equals("."))
+    return true;
+  }
+  return false;
 }
