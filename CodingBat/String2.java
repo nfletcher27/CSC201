@@ -53,3 +53,25 @@ public boolean xyzThere(String str) {
   }
   return false;
 }
+     
+// catDog
+public Boolean catDog(String str) {
+  int catCount = 0;
+  int dogCount = 0;
+  for(int i = 0; i < str.length()-2; i++) {
+    if(str.substring(i, i+3).equals("dog")) {
+      dogCount++;
+    } else if(str.substring(i, i+3).equals("cat")) {
+      catCount++;
+    } else {
+      catCount += 0;
+    }
+  }
+  
+  if(catCount == dogCount) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
