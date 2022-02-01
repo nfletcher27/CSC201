@@ -39,3 +39,26 @@ public boolean no14(int[] nums) {
     return true;
   }
 }
+
+// post4
+public int[] post4(int[] nums) {
+  int last4 = 0;
+  
+  for(int i = 0; i < nums.length; i++) {
+    if(nums[i] == 4) {
+      last4 = i;
+    } else {
+      last4 += 0;
+    }
+  }
+  
+  int[] post4 = new int[nums.length - last4 - 1];
+  if(last4 == nums.length-1) {
+    return post4;
+  } else {
+    for(int i = 0; i < post4.length; i++) {
+      post4[i] = nums[last4 + i + 1];
+    }
+    return post4;
+  }
+}
