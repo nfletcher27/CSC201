@@ -15,3 +15,16 @@ boolean doubleX(String str) {
     return false;
   }
 }
+
+// countXX
+int countXX(String str) {
+  int xxCount = 0;
+  for(int i = 0; i < str.length()-1; i++) {
+    if(str.charAt(i) == 'x' && str.charAt(i+1) == 'x') {
+      xxCount++;
+    } else {
+      xxCount += 0;
+    }
+  }
+  return xxCount;
+}
