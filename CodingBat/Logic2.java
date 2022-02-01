@@ -113,3 +113,25 @@ public int makeChocolate(int small, int big, int goal) {
     return -1;
   }
 }
+
+// closeFar
+public boolean closeFar(int a, int b, int c) {
+  if(Math.abs(a-b) <= 1 && Math.abs(a-c) >= 2 && Math.abs(b-c) >= 2) {
+    return true;
+  } else if(Math.abs(a-c) <= 1 && Math.abs(a-b) >= 2 && Math.abs(b-c) >= 2) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// evenlySpaced
+public boolean evenlySpaced(int a, int b, int c) {
+    return good(a, b, c) 
+    || good(a, c, b) 
+    || good(c, b, a);
+}
+
+public boolean good(int a, int b, int c) {
+    return (a+b) == 2 * c;
+}
