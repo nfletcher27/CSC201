@@ -98,3 +98,29 @@ public int countEvens(int[] nums) {
   }
   return evenCount;
 }
+
+// zeroFront
+public int[] zeroFront(int[] nums) {
+
+  int nums2[] = new int[nums.length];
+  int count = 0;
+  for (int i = nums.length - 1; i >= 0; i--) {
+  if (nums[i] != 0) {
+    nums2[i + count] = nums[i];
+  } else {
+    count++;
+    }
+  }
+  return nums2;
+}
+
+// bigDiff
+public int bigDiff(int[] nums) {
+  int min = nums[0];
+  int max = nums[0];
+  for(int i = 1; i < nums.length; i++) {
+   min = Math.min(min, nums[i]);
+   max = Math.max(max, nums[i]);
+  }
+  return max - min;
+}
