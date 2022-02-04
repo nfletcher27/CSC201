@@ -117,3 +117,11 @@ public boolean no23(int[] nums) {
   }
   return false;
 }
+
+// makeEnds
+public int[] makeEnds(int[] nums) {
+  int[] newmofo = new int[2];
+  newmofo[0] = nums[0];
+  newmofo[1] = nums[nums.length-1];
+  return newmofo;
+}
