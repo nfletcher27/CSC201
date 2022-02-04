@@ -100,3 +100,13 @@ public String front22(String str) {
     return str.substring(0, 2) + str + str.substring(0, 2);
   }
 }
+
+// in 1020
+public boolean in1020(int a, int b) {
+  if((a > 9 && a < 21) || (b > 9 && b < 21)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
