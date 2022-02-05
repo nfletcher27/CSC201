@@ -140,3 +140,12 @@ public int intMax(int a, int b, int c) {
     return c;
   }
 }
+
+// everyNth
+public String everyNth(String str, int n) {
+ String finished = "";
+    for(int i = 0; i <= str.length()-1; i += n) {
+      finished += str.charAt(i);
+    }
+  return finished;
+}
