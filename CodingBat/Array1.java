@@ -151,3 +151,15 @@ public int[] fix23(int[] nums) {
   } 
   return nums;
 }
+
+// frontPiece
+public int[] frontPiece(int[] nums) {
+  if(nums.length < 3) {
+    return nums;
+  } else {
+    int[] newS = new int[2];
+    newS[0] = nums[0];
+    newS[1] = nums[1];
+    return newS;
+  }
+}
