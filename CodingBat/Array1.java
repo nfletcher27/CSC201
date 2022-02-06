@@ -125,3 +125,19 @@ public int[] makeEnds(int[] nums) {
   newmofo[1] = nums[nums.length-1];
   return newmofo;
 }
+
+// make2
+public int[] make2(int[] a, int[] b) {
+  int[] fresh = new int[2];
+  if(a.length < 1) {
+    fresh[0] = b[0];
+    fresh[1] = b[1];
+  } else if(a.length == 1) {
+    fresh[0] = a[0];
+    fresh[1] = b[0];
+  } else {
+    fresh[0] = a[0];
+    fresh[1] = a[1];
+  }
+  return fresh;
+}
