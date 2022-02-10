@@ -85,3 +85,19 @@ public String stringSplosion(String str) {
   }
   return sb.toString();
 }
+
+// arrayFront9
+public boolean arrayFront9(int[] nums) {
+  int count = 0;
+  if(nums.length == 5 && nums[4] == 9) {
+    return false;
+  }
+  for(int i = 0; i < nums.length; i++) {
+    if(nums[i] == 9) {
+      count++;
+    } else {
+      count += 0;
+    }
+  }
+  return (count > 0);
+}
