@@ -76,3 +76,12 @@ public boolean or35(int n) {
     return false;
   }
 }
+
+// stringSplosion
+public String stringSplosion(String str) {
+  StringBuilder sb = new StringBuilder();
+  for(int i = 0; i < str.length()+1; i++) {
+    sb.append(str.substring(0, i));
+  }
+  return sb.toString();
+}
