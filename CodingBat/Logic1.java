@@ -147,3 +147,17 @@ public boolean in1To10(int n, boolean outsideMode) {
     return (n > 0 && n < 11);
   }
 }
+
+// inOrderEqual
+public boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
+  if(equalOk) {
+    return (a <= b && b <= c);
+  } else {
+    return (a < b && b < c);
+  }
+}
+
+// lessby10
+public boolean lessBy10(int a, int b, int c) {
+  return(Math.abs(a-b) >= 10 || Math.abs(b-c) >= 10 || Math.abs(a-c) >= 10);
+}
