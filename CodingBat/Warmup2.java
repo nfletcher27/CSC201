@@ -101,3 +101,18 @@ public boolean arrayFront9(int[] nums) {
   }
   return (count > 0);
 }
+
+// stringX
+public String stringX(String str) {
+  String finalS = str.replaceAll("x", "");
+  if(str.length()>1 && str.charAt(0) == 'x') {
+    finalS = "x" + finalS;
+  }
+  if(str.length()>1 && str.charAt(str.length()-1) == 'x') {
+    finalS = finalS + "x";
+  }
+  if(str.length() == 1) {
+    return str;
+  }
+  return finalS;
+}
