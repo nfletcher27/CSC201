@@ -161,3 +161,37 @@ public boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
 public boolean lessBy10(int a, int b, int c) {
   return(Math.abs(a-b) >= 10 || Math.abs(b-c) >= 10 || Math.abs(a-c) >= 10);
 }
+
+// maxMod5
+public int maxMod5(int a, int b) {
+  if(a == b) return 0;
+  if(a % 5 == b % 5) {
+    if(a >b) {
+      return b;
+    } else {
+      return a;
+    }
+  } else {
+    if(a > b) {
+      return a;
+    } else {
+      return b;
+    }
+  }
+}
+
+// teenSum
+public int teenSum(int a, int b) {
+  if(isTeen(a) || isTeen(b)) {
+    return 19;
+  } else {
+    return a + b;
+  }
+}
+public boolean isTeen(int a) {
+  if(a > 12 && a < 20) {
+    return true;
+  } else {
+    return false;
+  }
+}
