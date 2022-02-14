@@ -202,3 +202,10 @@ public int dateFashion(int you, int date) {
   if(you >= 8 || date >= 8) return 2;
   return 1;
 }
+
+// more20
+public boolean more20(int n) {
+  if(n < 0) return false;
+  return (((n%20) >= 1 || (n%20) >= 2) && n%20 < 3);
+}
+
