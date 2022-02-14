@@ -71,3 +71,10 @@ public boolean endsLy(String str) {
   }
   }
 }
+
+// atFirst
+public String atFirst(String str) {
+  if(str.length() > 1) return str.substring(0, 2);
+  if(str.length() > 0) return str.substring(0, 1) + "@";
+  return "@@";
+}
