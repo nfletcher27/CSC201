@@ -84,3 +84,11 @@ public String extraFront(String str) {
   if(str.length() < 2) return str + str + str;
   return str.substring(0, 2) + str.substring(0, 2) + str.substring(0, 2);
 }
+
+// lastChars
+public String lastChars(String a, String b) {
+  if(a.equals(b)) return "@@";
+  if(a.length() == 0) return  "@" + b.substring(b.length()-1, b.length());
+  if(b.length() == 0) return a.substring(0, 1) +"@"  ;
+  return a.substring(0, 1) + b.substring(b.length()-1, b.length());
+}
