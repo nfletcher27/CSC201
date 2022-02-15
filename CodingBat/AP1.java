@@ -3,6 +3,7 @@ public int scoresSpecial(int[] a, int[] b) {
   return findBiggest(a) + findBiggest(b);
 }
 
+// findBiggest
 public int findBiggest(int[] n) {
   int biggest = 0;
   for(int i = 0; i < n.length; i++) {
