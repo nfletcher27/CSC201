@@ -124,3 +124,17 @@ public int bigDiff(int[] nums) {
   }
   return max - min;
 }
+
+// withoutTen
+public int[] withoutTen(int[] nums) {
+  int[] fresh = new int[nums.length];
+  int zeros = 0;
+  for(int i = 0; i < nums.length; i++) {
+    if(nums[i] == 10) {
+      zeros++;
+    } else {
+      fresh[i-zeros] = nums[i];
+    }
+  }
+  return fresh;
+}
