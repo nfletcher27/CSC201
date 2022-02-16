@@ -138,3 +138,14 @@ public int[] withoutTen(int[] nums) {
   }
   return fresh;
 }
+
+// lucky13
+public boolean lucky13(int[] nums) {
+  Boolean saw1 = false;
+  Boolean saw3 = false;
+  for(int i = 0; i < nums.length; i++) {
+    if(nums[i] == 1) saw1 = true;
+    if(nums[i] == 3) saw3 = true;
+  }
+  return (!saw1 && !saw3);
+}
