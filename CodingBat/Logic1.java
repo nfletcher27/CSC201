@@ -231,3 +231,9 @@ public String alarmClock(int day, boolean vacation) {
     }
   }
 }
+
+// squirrelPlay
+public boolean squirrelPlay(int temp, boolean isSummer) {
+  if(isSummer) return (temp>59 && temp<101);
+  return (temp>59 && temp<91);
+}
