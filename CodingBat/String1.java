@@ -98,3 +98,7 @@ public String middleTwo(String str) {
   return str.substring(str.length()/2-1, str.length()/2+1);
 }
 
+// nTwice
+public String nTwice(String str, int n) {
+  return str.substring(0, n) + str.substring(str.length()-n, str.length());
+}
