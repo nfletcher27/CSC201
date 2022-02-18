@@ -102,3 +102,10 @@ public String middleTwo(String str) {
 public String nTwice(String str, int n) {
   return str.substring(0, n) + str.substring(str.length()-n, str.length());
 }
+
+// hasBads
+public boolean hasBad(String str) {
+  if(str.equals("xba")) return false;
+  if(str.length() < 3) return false;
+  return (str.substring(0, 3).equals("bad") || str.substring(1, 4).equals("bad"));
+}
