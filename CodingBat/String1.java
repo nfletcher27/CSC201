@@ -92,3 +92,9 @@ public String lastChars(String a, String b) {
   if(b.length() == 0) return a.substring(0, 1) +"@"  ;
   return a.substring(0, 1) + b.substring(b.length()-1, b.length());
 }
+
+// middleTwo
+public String middleTwo(String str) {
+  return str.substring(str.length()/2-1, str.length()/2+1);
+}
+
