@@ -109,3 +109,13 @@ public boolean hasBad(String str) {
   if(str.length() < 3) return false;
   return (str.substring(0, 3).equals("bad") || str.substring(1, 4).equals("bad"));
 }
+
+// conCat
+public String conCat(String a, String b) {
+  if(a.length() == 0 || b.length() == 0) return a + b;
+  if(a.charAt(a.length()-1) == b.charAt(0)) {
+    return a + b.substring(1, b.length());
+  } else {
+    return a + b;
+  }
+}
