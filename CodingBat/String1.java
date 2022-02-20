@@ -130,3 +130,9 @@ public boolean frontAgain(String str) {
 public String left2(String str) {
   return str.substring(2, str.length()) + str.substring(0,2);
 }
+
+// withoutEnd2
+public String withouEnd2(String str) {
+  if(str.length() < 2) return "";
+  return str.substring(1, str.length()-1);
+}
