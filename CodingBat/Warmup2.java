@@ -116,3 +116,13 @@ public String stringX(String str) {
   }
   return finalS;
 }
+
+// stringBits
+public String stringBits(String str) {
+  if(str.length() < 1) return str;
+  String newS = String.valueOf(str.charAt(0));
+  for(int i = 2; i < str.length(); i+=2) {
+    newS += String.valueOf(str.charAt(i));
+  }
+  return newS;
+}
