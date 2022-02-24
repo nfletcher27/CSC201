@@ -250,3 +250,12 @@ public boolean lastDigit(int a, int b, int c) {
   if(a % 10 == b % 10 || b % 10 == c % 10 || a % 10 == c % 10) return true;
   return false;
 }
+
+// redTicket
+public int redTicket(int a, int b, int c) {
+  if(a == 2 && a == b && a == c) return 10;
+  if(a == b && b == c) return 5;
+  if(a != c && a != b) return 1;
+  return 0;
+}
+
