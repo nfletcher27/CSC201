@@ -75,3 +75,11 @@ public Boolean catDog(String str) {
   }
 }
 
+// 
+public String repeatFront(String str, int n) {
+  String ret = "";
+  for(int i = n; i > 0; i--) {
+    ret += str.substring(0, i);
+  }
+  return ret;
+}
