@@ -153,3 +153,11 @@ public String without2(String str) {
     return str;
   }
 }
+
+// seeColor
+public String seeColor(String str) {
+  if(str.length() < 3) return "";
+  if(str.substring(0, 3).equals("red")) return "red";
+  if(str.length() > 3 && str.substring(0, 4).equals("blue")) return "blue";
+  return "";
+}
