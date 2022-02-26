@@ -161,3 +161,9 @@ public String seeColor(String str) {
   if(str.length() > 3 && str.substring(0, 4).equals("blue")) return "blue";
   return "";
 }
+
+// twoChar
+public String twoChar(String str, int index) {
+  if(index+2 > str.length() || index < 0) return str.substring(0, 2);
+  return str.substring(index, index+2);
+}
