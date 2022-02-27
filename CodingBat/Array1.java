@@ -174,3 +174,13 @@ public int maxTriple(int[] nums) {
     return nums[nums.length/2];
   }
 }
+
+// makeLast
+public int[] makeLast(int[] nums) {
+  int[] big = new int[nums.length*2];
+  for(int i = 0; i < big.length-1; i++) {
+    big[i] = 0;
+    big[big.length-1] = nums[nums.length-1];
+  }
+  return big;
+}
