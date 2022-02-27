@@ -184,3 +184,24 @@ public int[] makeLast(int[] nums) {
   }
   return big;
 }
+
+// front11
+public int[] front11(int[] a, int[] b) {
+  int[] single = new int[1];
+  int[] doub = new int[2];
+  int[] empty = new int[0];
+  if(a.length<1&&b.length<1) {
+    return empty;
+  }
+  if(a.length>0&&b.length>0) {
+    doub[0] = a[0];
+    doub[1] = b[0];
+    return doub;
+  } else if(a.length>0) {
+    single[0] = a[0];
+    return single;
+  } else {
+    single[0] = b[0];
+    return single;
+  }
+}
