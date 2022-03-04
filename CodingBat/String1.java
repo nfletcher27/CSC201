@@ -167,3 +167,14 @@ public String twoChar(String str, int index) {
   if(index+2 > str.length() || index < 0) return str.substring(0, 2);
   return str.substring(index, index+2);
 }
+
+// minCat
+public String minCat(String a, String b) {
+  if(a.length() > b.length()) {
+    return a.substring(a.length()-b.length(), a.length()) + b;
+  } else if(b.length() > a.length()) {
+    return a + b.substring(b.length()-a.length(), b.length());
+  } else {
+    return a + b;
+  }
+}
