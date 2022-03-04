@@ -178,3 +178,12 @@ public String minCat(String a, String b) {
     return a + b;
   }
 }
+
+// deFront
+public String deFront(String str) {    
+  String word = "";
+  if(str.charAt(0) == 'a') word += "a";
+  if(str.charAt(1) == 'b') word += "b";
+  word += str.substring(2, str.length());
+  return word;
+}
