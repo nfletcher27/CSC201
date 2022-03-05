@@ -205,3 +205,14 @@ public int[] front11(int[] a, int[] b) {
     return single;
   }
 }
+
+// swapEnds
+public int[] swapEnds(int[] nums) {
+  int[] arr = new int[nums.length];
+  arr[0] = nums[nums.length-1];
+  arr[arr.length-1] = nums[0];
+  for(int i = 1; i < nums.length-1; i++) {
+    arr[i] = nums[i];
+  }
+  return arr;
+}
