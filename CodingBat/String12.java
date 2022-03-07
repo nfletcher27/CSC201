@@ -55,3 +55,16 @@ public String doubleChar(String str) {
   }
   return finalS.toString();
 }
+
+// countCode
+public int countCode(String str) {
+  int counter = 0;
+  for(int i = 0; i < str.length()-3; i++) {
+    if(isCode(str.substring(i, i+4))) counter++;
+  }
+  return counter;
+}
+public boolean isCode(String str) {
+  if(str.charAt(0) == 'c' && str.charAt(1) == 'o' && str.charAt(3) == 'e') return true;
+  return false;
+}
