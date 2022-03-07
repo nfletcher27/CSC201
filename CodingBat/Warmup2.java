@@ -151,3 +151,21 @@ public Boolean isGood(int a, int b) {
   if((a == 6) && (b == 6 || b == 7)) return true;
   return false;
 }
+
+// frontTimes
+public String frontTimes(String str, int n) {
+  if(str.equals("") && n != 0) return str;
+  if(n == 0) return "";
+  if(str.length() < 3) {
+    String part = "";
+    for(int i = 0; i < n; i++) {
+      part += str.substring(0, str.length());
+    }
+    return part;
+  }
+  String part = str.substring(0, 3);
+  for(int i = 0; i < n-1; i++) {
+    part += str.substring(0, 3);
+  }
+  return part;
+}
