@@ -135,3 +135,19 @@ public int arrayCount9(int[] nums) {
   }
   return count;
 }
+
+// array667
+public int array667(int[] nums) {
+  int counter = 0;
+  for(int i = 0; i < nums.length-1; i++) {
+    if(isGood(nums[i], nums[i+1])) {
+      counter++;
+    }
+  }
+  return counter;
+}
+
+public Boolean isGood(int a, int b) {
+  if((a == 6) && (b == 6 || b == 7)) return true;
+  return false;
+}
