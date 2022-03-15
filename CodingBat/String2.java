@@ -83,3 +83,17 @@ public String repeatFront(String str, int n) {
   }
   return ret;
 }
+
+// xyBalance
+public boolean xyBalance(String str) {
+  if(str.contains("x") && !str.contains("y")) return false;
+  if(!str.contains("x")) return true;
+  int xPos = 0;
+  int yPos = 0;
+  for(int i = 0; i < str.length(); i++) {
+    if(str.charAt(i) == 'x') xPos = i;
+    if(str.charAt(i) == 'y') yPos = i;
+  }
+  if(yPos > xPos) return true;
+  return false;
+}
