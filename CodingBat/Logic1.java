@@ -271,3 +271,9 @@ public boolean lessBy10(int a, int b, int c) {
   return (a >= b + 10 || b >= c + 10 || c >= a + 10 || c >= b + 10);
 }
 
+// sumLimit
+public int sumLimit(int a, int b) {
+  int total = a + b;
+  if(String.valueOf(total).length() == String.valueOf(a).length()) return total;
+  return a;
+}
