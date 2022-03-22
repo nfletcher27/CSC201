@@ -277,3 +277,8 @@ public int sumLimit(int a, int b) {
   if(String.valueOf(total).length() == String.valueOf(a).length()) return total;
   return a;
 }
+
+// shareDigit
+public boolean shareDigit(int a, int b) {
+  return (a/10 == b/10 || a/10 == b%10 || a%10 == b/10 || a%10 == b%10);
+}
