@@ -42,3 +42,15 @@ public int wordsCount(String[] words, int len) {
   return counter;
 }
 
+// wordsWithout
+public String[] wordsWithout(String[] words, String target) {
+  int counter = 0;
+  for(int i = 0; i < words.length; i++) {
+    if(words[i].equals(target)) counter++;
+  }
+  ArrayList<String> without = new ArrayList<String>();
+  for(int i = 0; i < words.length; i++) {
+    if(!words[i].equals(target)) without.add(words[i]);
+  }
+  return without.toArray(new String[words.length-counter]);
+}
