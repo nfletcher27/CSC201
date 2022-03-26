@@ -198,3 +198,15 @@ public String lastTwo(String str) {
   str.substring(str.length()-1, str.length()) +
   str.substring(str.length()-2, str.length()-1);
 }
+
+// lastTwo 
+public String lastTwo(String str) {
+  String last = "";
+  for(int i = 0; i < str.length()-2; i++) {
+    last += str.charAt(i);
+  }
+  if(str.length() <= 1) return str;
+  last += str.charAt(str.length()-1);
+  last += str.charAt(str.length()-2);
+  return last;
+}
