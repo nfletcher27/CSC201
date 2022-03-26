@@ -282,3 +282,14 @@ public int sumLimit(int a, int b) {
 public boolean shareDigit(int a, int b) {
   return (a/10 == b/10 || a/10 == b%10 || a%10 == b/10 || a%10 == b%10);
 }
+
+// withoutDoubles
+public int withoutDoubles(int die1, int die2, boolean noDoubles) {
+  if(die1 == die2 && die1 == 6 && noDoubles) return 7;
+  if (noDoubles) {
+    if (die1 == die2) 
+      return die1 + die2 + 1;
+    return die1 + die2;
+  }
+  return die1 + die2;
+}
