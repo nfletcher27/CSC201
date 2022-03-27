@@ -238,3 +238,13 @@ public int[] plusTwo(int[] a, int[] b) {
   c[3] = b[1];
   return c;
 }
+
+// midThree 
+public int[] midThree(int[] nums) {
+  int mid = (nums.length/2);
+  int[] midT = new int[3];
+  midT[0] = nums[mid-1];
+  midT[1] = nums[mid];
+  midT[2] = nums[mid+1];
+  return midT;
+}
