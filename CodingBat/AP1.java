@@ -63,3 +63,12 @@ public int matchUp(String[] a, String[] b) {
   }
   return count;
 }
+
+// wordsWithoutList
+public List wordsWithoutList(String[] words, int len) {
+  ArrayList<String> without = new ArrayList<String>();
+  for(int i = 0; i < words.length; i++) {
+    if(words[i].length() != len) without.add(words[i]);
+  }
+  return without;
+}
