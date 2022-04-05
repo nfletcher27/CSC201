@@ -68,3 +68,20 @@ public boolean isCode(String str) {
   if(str.charAt(0) == 'c' && str.charAt(1) == 'o' && str.charAt(3) == 'e') return true;
   return false;
 }
+
+// getSandwich
+public String getSandwich(String str) {
+  Boolean seenBread = false;
+  int firstSeen = 0;
+  int lastSeen = 0;
+  
+  for(int i = 0; i < str.length()-4; i++) {
+    if(str.substring(i, i+5).equals("bread") && !seenBread) {
+      seenBread = true;
+      firstSeen = i;
+    }
+    if(str.substring(i, i+5).equals("bread") && seenBread) lastSeen = i;
+  }
+  if(lastSeen > 0 && firstSeen != lastSeen) return str.substring(firstSeen+5, lastSeen);
+  return "";
+}
