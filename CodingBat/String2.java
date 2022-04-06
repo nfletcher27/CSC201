@@ -97,3 +97,14 @@ public boolean xyBalance(String str) {
   if(yPos > xPos) return true;
   return false;
 }
+     
+// prefixAgain
+public boolean prefixAgain(String str, int n) {
+  if (str.length() == 2 && str.charAt(0) == str.charAt(1)) return true;
+  if (str.length() < 2) return false;
+  for(int i = 1; i < str.length()-n; i++) {
+    if(str.substring(0, n).equals(str.substring(i, i+n))) return true;
+  }
+  return false;
+}
+
