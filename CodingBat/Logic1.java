@@ -299,3 +299,9 @@ public boolean specialEleven(int n) {
   if (n % 11 == 0 || n % 11 == 1) return true;
   return false;
 }
+
+// less20
+public boolean less20(int n) {
+  if (Math.abs(n%20-20) == 1 || Math.abs(n%20-20) == 2) return true;
+  return false;
+}
