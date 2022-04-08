@@ -293,3 +293,9 @@ public int withoutDoubles(int die1, int die2, boolean noDoubles) {
   }
   return die1 + die2;
 }
+
+// specialEleven
+public boolean specialEleven(int n) {
+  if (n % 11 == 0 || n % 11 == 1) return true;
+  return false;
+}
