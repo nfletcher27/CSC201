@@ -1,3 +1,5 @@
+// all array 1 finished
+
 // sum2
 public int sum2(int[] nums) {
   if(nums.length < 2) {
