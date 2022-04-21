@@ -81,3 +81,23 @@ public int sumHeights(int[] heights, int start, int end) {
   }
   return counter;
 }
+
+// wordsWithout
+public String[] wordsWithout(String[] words, String target) {
+  int count = 0;
+  for(int i = 0; i < words.length; i++) {
+    if(!words[i].equals(target)) count++;
+  }
+ 
+  String[] newWords = new String[count];
+  int arrCount = 0;
+ 
+  for(int i = 0; i < words.length; i++) {
+    if(!words[i].equals(target)) {
+      newWords[arrCount] = words[i];
+      arrCount++;
+    }
+  }
+ 
+  return newWords;
+}
