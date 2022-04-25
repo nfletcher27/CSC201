@@ -189,3 +189,14 @@ public boolean noTriples(int[] nums) {
   }
   return true;
 }
+
+// alternatePairs
+public String altPairs(String str) {
+  String alt = "";
+  for(int i = 0; i < str.length(); i++) {
+    alt += str.charAt(i);
+    if(i < str.length()-1) alt += str.charAt(i+1);
+    i += 3;
+  }
+  return alt;
+}
